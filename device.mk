@@ -441,3 +441,12 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor \
     android.system.keystore2-V1-ndk.vendor
+
+# Specify GCamGO Version
+ifeq ($(ARROW_GAPPS),true)
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3
+else
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt
+endif
