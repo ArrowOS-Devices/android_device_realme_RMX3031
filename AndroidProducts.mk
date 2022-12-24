@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX3031.mk
+    $(LOCAL_DIR)/arrow_RMX3031.mk
+
+COMMON_LUNCH_CHOICES := \
+    arrow_RMX3031-user \
+    arrow_RMX3031-userdebug \
+    arrow_RMX3031-eng
