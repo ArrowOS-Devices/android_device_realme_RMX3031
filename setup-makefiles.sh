@@ -21,7 +21,7 @@ set -e
 export DEVICE=RMX3031
 export VENDOR=realme
 
-INITIAL_COPYRIGHT_YEAR=2021
+INITIAL_COPYRIGHT_YEAR=2022
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
