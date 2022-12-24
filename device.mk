@@ -103,9 +103,15 @@ PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-aosp
+PRODUCT_PACKAGES += \
+    WifiOverlay \
+    TetheirngOverlay \
+    TelephonyOverlay \
+    SystemUIOverlay \
+    SettingsOverlay \
+    FrameworkResOverlay \
+    DozeSystemUIOverlay \
+    DozeSystemOverlay
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -417,10 +423,6 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    TetheringConfigOverlay \
-    WifiOverlay \
-    DozeOverlaySystem \
-    DozeOverlaySystemUI \
     android.hardware.wifi@1.1.vendor \
     android.hardware.wifi@1.2.vendor \
     android.hardware.wifi@1.3.vendor \
