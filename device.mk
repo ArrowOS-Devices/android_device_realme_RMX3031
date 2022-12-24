@@ -86,6 +86,7 @@ PRODUCT_PACKAGES += \
     init.ago.rc \
     init.cgroup.rc \
     init.connectivity.common.rc \
+    init.safailnet.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6893.rc \
